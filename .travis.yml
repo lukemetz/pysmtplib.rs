@@ -7,7 +7,7 @@ install:
   - cd ../
   - git clone --recursive https://github.com/rust-lang/cargo
   - (cd cargo && make -j5 && sudo make install)
-  - cd smtplib.rs
+  - cd pysmtplib.rs
 script:
   - cargo build
   - cargo test
