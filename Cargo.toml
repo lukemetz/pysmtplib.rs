@@ -1,0 +1,10 @@
+[package]
+name = "pysmtplib"
+version = "0.1.0"
+authors = [ "luke.s.metz@gmail.com" ]
+
+[[lib]]
+name = "pysmtplib"
+
+[dependencies.rustpy]
+git = "https://github.com/lukemetz/rustpy.git"
