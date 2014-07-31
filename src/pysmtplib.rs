@@ -19,7 +19,6 @@ fn main() {
 ```
 */
 
-#![crate_name = "smtplib"]
 #![crate_type = "lib"]
 #![feature(macro_rules)]
 
