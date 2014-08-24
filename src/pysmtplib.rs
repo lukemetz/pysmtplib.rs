@@ -5,16 +5,16 @@ A demo partial wrapper of the smtplib library from python to demonstrate rustpy.
 #[link(name="python2.7")]
 extern crate rustpy;
 extern crate pysmtplib;
+use rustpy::PyState;
 
 fn main() {
-  let py = rustpy::PyState::new();
   let state = PyState::new();
   let mut session = pysmtplib::SMTP::new(&state, "smtp.gmail.com", 587);
   session.ehlo();
   session.starttls();
   let username = "example@example.com";
-  let _ = session.login(username, "example").unwrap();
-  let _ = session.sendmail(username, username, "Hello world from rust").unwrap();
+  let _ = session.login(username, "example");
+  let _ = session.sendmail(username, username, "Hello world from rust");
 }
 ```
 */
