@@ -26,7 +26,7 @@ fn main() {
 extern crate rustpy;
 extern crate debug;
 
-use rustpy::{PyType, PyState, PyObject, PyError};
+use rustpy::{ToPyType, PyState, PyObject, PyError};
 
 pub struct SMTP<'a> {
   state : &'a PyState,
