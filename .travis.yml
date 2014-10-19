@@ -1,7 +1,4 @@
-language: c
-install:
-  - curl www.rust-lang.org/rustup.sh | sudo bash
-  - export LD_LIBRARY_PATH=/usr/local/lib
+language: rust
 script:
   - cargo build
   - cargo test
